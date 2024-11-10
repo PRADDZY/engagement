@@ -1,0 +1,113 @@
+/* Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Afacad', sans-serif;
+    background-color: #f3ebe1;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding-bottom: 50px;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #d4a373;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 60px;
+}
+
+.couple-names {
+    font-family: 'Bungee Tint', sans-serif;
+    font-size: 2.5em;
+    color: #a0522d;
+}
+
+.message {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #555;
+}
+
+.event-details h2 {
+    margin: 20px 0 10px;
+    color: #8b0000;
+    font-size: 1.8em;
+}
+
+.event-details p {
+    margin: 5px 0;
+}
+
+footer {
+    margin-top: 20px;
+    color: #8b0000;
+}
+
+/* Countdown Banner */
+.countdown-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: #d2691e;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    z-index: 10;
+}
+
+/* Flower Falling Animation */
+.flower-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.flower {
+    position: absolute;
+    bottom: 100%;
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+    background-color: transparent;
+    background-size: cover;
+    animation: fall linear infinite;
+}
+
+/* Colors and positions */
+@keyframes fall {
+    0% { transform: translateY(-10px) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .couple-names {
+        font-size: 2em;
+    }
+
+    .event-details h2 {
+        font-size: 1.5em;
+    }
+
+    .countdown-banner {
+        font-size: 1em;
+    }
+}
