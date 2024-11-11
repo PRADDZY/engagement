@@ -19,7 +19,7 @@ body {
 
 .container {
     text-align: center;
-    max-width: 600px;
+    max-width: 800px;
     padding: 20px;
     border: 2px solid #d4a373;
     border-radius: 10px;
@@ -28,13 +28,14 @@ body {
 }
 
 .couple-names {
-    font-family: 'Bungee Tint', sans-serif;
-    font-size: 2.5em;
+    font-family: 'Rozha One', sans-serif;
+    font-size: 3em;
     color: #a0522d;
 }
 
 .message {
-    font-size: 1.2em;
+    font-family: 'Cambay', 'sans-serif';
+    font-size: 1.6em;
     margin-top: 10px;
     color: #555;
 }
